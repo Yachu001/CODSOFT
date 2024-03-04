@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/69a9a26872.js" crossorigin="anonymous"></script>
+</head>
+<body>
+                     <!--Header Section-->
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="./images/logo.png" alt="" class="logo">
+            <ul id="side-menu">
+                <li><a href="#header" onclick="clMenu()">Home</a></li>
+                <li><a href="#about" onclick="clMenu()">About</a></li>
+                <li><a href="#services" onclick="clMenu()">Service</a></li>
+                <li><a href="#portfolio" onclick="clMenu()">portfolio</a></li>
+                <li><a href="#contact" onclick="clMenu()">Contact</a></li>
+
+                <p class="icon"><i class="fa-regular fa-circle-xmark fas" onclick="clMenu()"></i></p>
+                
+            </ul>
+            <i class="fa-solid fa-bars fas" onclick="opMenu()"></i>
+           </nav>
+           <div class="header-text">
+            <p>Junior Web Developer</p>
+            <h1>Hi, I'm <span>Yahya</span> <br>From India</h1>
+           </div>
+        </div>
+    </div>
+    <!--about Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pexels-mohamed-abdelghaffar-771742.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>"Self-motivated team player with nine years of experience seeking a position
+                         as a lead web developer with Next Generation Web Development where
+                          I can apply my advanced knowledge of web design with my leadership
+                           abilities to meet client needs and exceed their expectations."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>Web App Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Website Development</li>
+                            <li><span>Web App Development</span><br>Web App Development</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Mern Stack From UpGrad Institute</li>
+                            <li><span>2023</span><br>BBA CA From Govt Arts & Science College Gudalur</li>
+                            <li><span>2020</span><br>Commerce & Computer Applications 
+                            From Govt HSS Gudalur</li>
+                        </ul>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------       Services        ------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> A website is the reflection of your business and conveys
+                         your brand image in front of your target audience.</p>
+                         <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Every website has a story to tell. And this story starts from the day 
+                        it was born.</p>
+                         <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>Website design services at the most basic level are to promote a business 
+                        or a brand. And this story starts from the day it was born.</p>
+                         <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------         portfolio    ------------>
+    <div id="portfolio">
+        <div class="container">
+           <h1 class="sub-title">My Work</h1>
+           <div class="work-list">
+               <div class="work">
+                   <img src="./images/portfo.png" alt="">
+                   <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A website provides professional information about an indivual.<br>
+                     Click the icon below to open</p>
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+               </div>
+               <div class="work">
+                   <img src="./images/work-2.png" alt="">
+                  <div class="layer">
+                    <h3>Calculator App</h3>
+                    <p>The app that performs basic arithamatic operations.<br>
+                        Click the icon below to open</p></p>
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+               </div>
+               <div class="work">
+                   <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                      <h3>Social Media App</h3>
+                      <p>The app connects you to the talented people around the word.<br>
+                        Click the icon below to open</p></p>
+                        <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+               </div>
+               <a href="#" class="btn">See More</a>
+           </div>
+        </div>
+    </div>
+
+
+    <!---------------          Contact     ------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="contact"><i class="fa-solid fa-envelope"></i>yachoos2001@gmail.com</p>
+                    <p class="contact"><i class="fa-solid fa-mobile"></i>+91 62821 88851</p>
+                    <div class="s-icon">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="./images/yahya-resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright &copy; Yahya Tp.</p>
+        </div>
+    </div>
+
+
+
+
+  <script>
+    var tablinks =document.getElementsByClassName("tab-links")
+    var tabcontents =document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>  
+  <script>
+    var sidemenu=document.getElementById("side-menu");
+    function opMenu(){
+        sidemenu.style.right = "0";
+    }
+    function clMenu(){
+        sidemenu.style.right = "-200px"
+    }
+  </script>
+</body>
+</html>
