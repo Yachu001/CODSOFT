@@ -1,0 +1,104 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: hsl(0, 59%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    width: 300px;
+    background-color: hsl(246, 80%, 38%);
+    height: 470px;
+    padding: 1em;
+    border-radius: 1em;
+}
+.keys{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5em;
+    
+    background-color: hsl(246, 80%, 38%);
+
+}
+.key{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsla(0, 3%, 35%, 0.807);
+    color: aliceblue;
+    border: none; 
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+.key:hover{
+    background-color: hsla(0, 3%, 45%, 0.807);
+}
+.key:active{
+    background-color: hsla(0, 3%, 55%, 0.807);
+
+}
+
+.display{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 15%;
+    margin-bottom: 2em;
+}
+#dis{
+    width: 98%;
+    height: 98%;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.clear{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsla(0, 3%, 35%, 0.807);
+    color: aliceblue;
+    border: none; 
+    font-size: 2em;
+    font-weight: bold;
+}
+.clear:hover{
+    background-color: hsla(0, 3%, 45%, 0.807);
+}
+.clear:active{
+    background-color: hsla(0, 3%, 55%, 0.807);
+}
+.op{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsla(34, 81%, 50%, 0.976);
+    color: white;
+    border: none; 
+    font-size: 2em;
+    font-weight: bold;
+}
+.op:hover{
+    background-color: hsla(34, 87%, 40%, 0.976);
+}
+.op:active{
+    background-color: hsla(34, 87%, 50%, 0.976);
+}
+.equal{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hwb(0 93% 4% / 0.995);
+    color: black;
+    border: none; 
+    font-size: 2em;
+    font-weight: bold;
+}
+.equal:hover{
+    background-color: hwb(0 93% 14% / 0.995);
+}
+.equal:active{
+    background-color: hwb(0 93% 24% / 0.995);
+}

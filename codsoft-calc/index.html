@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cod-Soft Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="display">
+            <input id="dis" readonly>
+        </div>
+        <div class="keys">
+            <button class="key" id="btn" onclick="appendItems('7')">7</button>
+            <button class="key" id="btn" onclick="appendItems('8')">8</button>
+            <button class="key" id="btn" onclick="appendItems('9')">9</button>
+            <button class="op" id="btn" onclick="appendItems('/')">&divide;</button>
+            <button class="key" id="btn" onclick="appendItems('4')">4</button>
+            <button class="key" id="btn" onclick="appendItems('5')">5</button>
+            <button class="key" id="btn" onclick="appendItems('6')">6</button>
+            <button class="op"id="btn" onclick="appendItems('*')">x</button>
+            <button class="key" id="btn" onclick="appendItems('1')">1</button>
+            <button class="key" id="btn" onclick="appendItems('2')">2</button>
+            <button class="key" id="btn" onclick="appendItems('3')">3</button>
+            <button class="op"id="btn" onclick="appendItems('-')">-</button>
+            <button class="key" id="btn" onclick="appendItems('.')">.</button>
+            <button class="key" id="btn" onclick="appendItems('0')">0</button>
+            <button class="equal"id="btn" onclick="calc()">=</button>
+            <button class="op" id="btn" onclick="appendItems('+')">+</button>
+            <button class="clear" onclick="clearDis()">C</button>
+        </div>
+    </div>
+
+    <script>
+       const display=document.getElementById("dis")
+
+       function appendItems(input){
+         display.value += input;
+       }
+
+       function clearDis(){
+        display.value ="";
+       }
+
+       function calc(){
+        try{
+            display.value = eval(display.value)
+        }catch(error){
+            display.value="Error";
+        }
+        
+       }
+    </script>
+</body>
+</html>
